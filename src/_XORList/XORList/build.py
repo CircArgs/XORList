@@ -1,5 +1,5 @@
-from distutils.core import setup
+from distutils.core import setup, Extension
 from Cython.Build import cythonize
 
-setup(name='Hello world app',
-      ext_modules=cythonize("hello.pyx"))
+ext = Extension("RNG", sources=["Rectangle.pyx", "Rectangle.cpp"], language="c++")
+setup(name="RNG", ext_modules=cythonize(ext))

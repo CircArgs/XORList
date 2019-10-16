@@ -9,6 +9,8 @@ autopep8 = "*"
 pylint = "*"
 hypothesis = "*"
 ipython = "*"
+jupyter = "*"
+cython = "*"
 
 [packages]
 cython = "*"
