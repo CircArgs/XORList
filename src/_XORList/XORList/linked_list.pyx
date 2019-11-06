@@ -70,8 +70,6 @@ cdef class XORList:
     def tail(self):
         return (<Node> self.last)
     
-    
-    
     cpdef append(self, object val):
         self.length+=1
         #empty list
@@ -127,16 +125,16 @@ def iter_XORList(l):
 # print(start.forward())
 # print(start.forward().backward())
 # # print(<Node>sp)
-import time
+# import time
 
-start=time.time()
-l=XORList()
-for i in range(1000):
-    l.append(i)
-print('time xor ', time.time()-start)
-print(len(l))
-start=time.time()
-l=[]
-for i in range(1000):
-    l.append(i)
-print('time regular ', time.time()-start)
+# start=time.time()
+# l=XORList()
+# for i in range(1000):
+#     l.append(i)
+# print('time xor ', time.time()-start)
+# print(len(l))
+# start=time.time()
+# l=[]
+# for i in range(1000):
+#     l.append(i)
+# print('time regular ', time.time()-start)

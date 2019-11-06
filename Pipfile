@@ -11,6 +11,7 @@ hypothesis = "*"
 ipython = "*"
 jupyter = "*"
 cython = "*"
+python-config = "*"
 
 [packages]
 cython = "*"
