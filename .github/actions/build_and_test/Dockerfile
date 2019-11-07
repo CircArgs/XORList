@@ -2,7 +2,7 @@
 FROM python:3
 
 # Set the WORKDIR to /app so all following commands run in /app
-# WORKDIR /app
+WORKDIR /app
 
 # copy project to workdir
 COPY . .
