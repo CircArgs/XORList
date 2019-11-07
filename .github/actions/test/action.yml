@@ -1,33 +1,10 @@
 name: On Push
-description: Deploy a python function to aws Lambda. This workflow is triggered on pushes to the master branch of the repository.
+description: build and test
 on:
   push:
     branches:
       - master
 
-inputs:
-  requirements:
-    description: Space delimited list of python packages to deploy with the function, i.e. 'pandas pytorch pytz'
-    required: false
-    default: 'pipdate'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.requirements }}name: On Push
-description: Deploy a python function to aws Lambda. This workflow is triggered on pushes to the master branch of the repository.
-on:
-  push:
-    branches:
-      - master
-
-inputs:
-  requirements:
-    description: Space delimited list of python packages to deploy with the function, i.e. 'pandas pytorch pytz'
-    required: false
-    default: 'pipdate'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.requirements }}
