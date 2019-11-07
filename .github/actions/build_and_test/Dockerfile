@@ -2,7 +2,7 @@
 FROM python:3
 
 # Set the WORKDIR to /app so all following commands run in /app
-WORKDIR /app
+# WORKDIR /app
 
 # copy project to workdir
 COPY . .
@@ -11,4 +11,4 @@ COPY . .
 # nostest, pytest or any other test framework you use
 # RUN pip3 install pipenv && pipenv install
 
-ENTRYPOINT ["~/app/.github/actions/build_and_test/entrypoint.sh"]
+ENTRYPOINT ["~/.github/actions/build_and_test/entrypoint.sh"]
