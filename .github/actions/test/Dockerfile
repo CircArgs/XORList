@@ -5,8 +5,10 @@ FROM python:3
 WORKDIR /app
 
 # copy project to workdir
-COPY . ./
+COPY . .
 
 # Install requirements and dev requirements through pip. Those should include
 # nostest, pytest or any other test framework you use
-RUN pip3 install pipenv && pipenv install
+# RUN pip3 install pipenv && pipenv install
+
+ENTRYPOINT ["~/app/.github/actions/build_and_test/entrypoint.sh"]
