@@ -11,4 +11,4 @@ COPY . .
 # nostest, pytest or any other test framework you use
 # RUN pip3 install pipenv && pipenv install
 
-ENTRYPOINT ["~/.github/actions/build_and_test/entrypoint.sh"]
+ENTRYPOINT ["./.github/actions/build_and_test/entrypoint.sh"]
