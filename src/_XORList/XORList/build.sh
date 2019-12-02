@@ -16,5 +16,5 @@ echo -n "Compiling linked_list.c to object code";
 gcc -c linked_list.c ${CFLAGS}; # outputs linked_list.o
 print_done;
 echo -n "Creating shared object";
-gcc linked_list.o -o linked_list.so -shared ${LDFLAGS} -fPIC; # --> outputs fib.so
+gcc linked_list.o -o linked_list.so -shared ${LDFLAGS} -fPIC; # --> outputs linked_list.so
 print_done;
