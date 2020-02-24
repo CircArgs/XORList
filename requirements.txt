@@ -1,1 +1,2 @@
+-i https://pypi.org/simple/
 cython==0.29.14
