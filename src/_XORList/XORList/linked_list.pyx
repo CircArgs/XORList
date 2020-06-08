@@ -1,6 +1,5 @@
 # %%cython
 
-#TODO: reference counting
 #https://stackoverflow.com/questions/58431732/cython-memory-efficient-doubly-linked-list
 
 from cpython.object cimport PyObject
